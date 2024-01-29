@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    
+    <script>
+
+    //////////////////////result-login-form///////////////////////
+        let user = "milan"
+        let gmail = "m@gmail.com"
+        let password = 8899
+    
+        const user1 = prompt("enter your username");
+        if (user1 === user) {
+            console.log("username is valid..");
+            const gmail1 = prompt("enter your email");
+            if (gmail1 == gmail) {
+                console.log("gmail is valid...");
+                const password = prompt("enter your password");
+                if (password == password) {
+                    console.log("succesfull idpassword...");
+                    const result =parseInt( prompt("enter your result"));
+                        let economy = parseInt(prompt("enter your economy marks"))
+                        let Geography = parseInt(prompt("enter your geography marks"))
+                        let english = parseInt(prompt("enter your english marks"))
+                        let gujarati = parseInt(prompt("enter your gujarati marks"))
+                        let hindi = parseInt(prompt("enter your hindi marks"))
+                
+                        let avg =  (economy + Geography + english + gujarati + hindi)/5;
+                
+                        console.log("result = " , avg)
+                        if(result>80){
+                            console.log("grade : A+")
+                        }else if(result>70 && result<=80){
+                            console.log("grade : B+")
+                        }else if(result>50 && result<=70){
+                            console.log("grade : C+");
+                        }else{
+                            console.log("FAIL");
+                        }
+                } else {
+                    console.log("wrong idpassword");
+                }
+            }else{
+                console.log("gmail is not valid...");
+            }
+        }else{
+            console.log("username is not valid");
+        }
+
+    </script>
+   
+
+</body>
+</html>

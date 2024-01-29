@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        //////////////////////////////order-login-form/////////////////////
+
+        let user = "milan"
+        let pass = "99"
+        let GRid = "88"
+    
+        let admin = "maulik"
+        let idpass = "77"
+        let grid = "66"
+    
+        let order = "clock"
+    
+        const userr = prompt("enter username");
+        const password = prompt("enter password")
+        const GRID = prompt("enter GRID");
+    
+        if (userr == user && password == pass && GRID == GRid) {
+            console.log("username is succesfull...");
+        }else if (userr == admin && password == idpass && GRID == grid) {
+            console.log("admin is succesfull");
+            const orderr = prompt("enter your order..")
+            if (orderr == order) {
+                console.log("order is succesfull...");
+            }else{
+                console.log("order is not valid..");
+            }
+        }else{
+            console.log("data is not valid..");
+        }
+
+    </script>
+
+
+
+</body>
+</html>
