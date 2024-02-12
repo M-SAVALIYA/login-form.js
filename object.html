@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+    
+
+        let arr = [
+
+            {
+                name: "watch",
+                price: "300",
+                color: "Black",
+                discription: "Tommy Hilfiger Analog Blue Dial Men's",
+                available: true
+
+            },
+            {
+                name: "Bag",
+                price: "400",
+                color: "Grey",
+                discription: "Anti Theft Number Lock Backpack Bag with 15.6 Inch Laptop Compartment",
+                available: true
+
+            },
+            {
+                name: "Wallet",
+                price: "382",
+                color: "Lightbrown ",
+                discription: "Storite PU Leather 9 Slot",
+                available: false
+
+            },
+            {
+                name: "Shoes",
+                price: "450",
+                color: "White",
+                discription: "Mens Men_Boston Running Shoes",
+                available: true
+
+            },
+            {
+                name: "Sunglasses",
+                price: "654",
+                color: "Polarized Blue ",
+                discription: "Lens Square Sunglasses ",
+                available: false
+
+
+            },
+            {
+                name: "Shirt",
+                price: "850",
+                color: "light Blue",
+                discription: "Tommy Hilfiger Analog Blue Dial Men's",
+                available: true
+
+            },
+
+        ]
+
+        let result = arr.filter((val) => val.available === true && val.price > 200 && val.price < 500)
+        console.log(result);
+
+
+    </script>
+</body>
+
+</html>
